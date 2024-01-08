@@ -1,0 +1,143 @@
+.logo{
+    width: 50px;
+    position: relative;
+}
+.arrow{
+    width: 80px;
+    margin-top: 50px;
+}
+.toggle{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar{
+    font-weight: 400;
+    display: none;
+}
+.sidebar2{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+}
+#closing{
+ display: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #6E97CD;
+    font-weight: 600;
+}
+.navv{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.h1{
+    text-align: center;
+    font-family: 'Sevillana', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 900;
+    display: inline;
+}
+span{
+     color: yellow;
+     cursor: pointer;
+}
+.footer{
+    background: #152F4F;
+    color:white;
+    
+    .links{
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+.hero-section {
+        background-image: url(https://i.ibb.co/ys7dPDf/pexels-pixabay-371649.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        padding: 100px 0;
+        margin-top: 50px;
+        z-index: -10;
+ }
+
+@media (max-width:600px){
+    /* .good2{
+        display: block;
+        cursor: pointer;
+    } */
+     
+
+    .sidebar{
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      padding-bottom: 20px;
+}
+.sidebar2{
+    display: none;
+}
+
+
+    a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+    a:hover{
+        color: white;
+       
+}
+    .toggle{
+       display: block;
+    }
+    #closing{
+        display: block;
+        font-size: 45px;
+        font-weight: 600;
+        left: 0;
+        position: absolute;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px; /* Adjust the gap between cards as needed */
+        margin-top: 5rem; /* Adjust the margin-top as needed */
+    }
+    
+}
